@@ -43,7 +43,6 @@ namespace POSales
             double green = color.G;
             double blue = color.B;
 
-            //If correction factor is less than 0 , darken color.
 
             if(correctionFactor <0)
             {
@@ -53,7 +52,6 @@ namespace POSales
                 blue *= correctionFactor;
             }
 
-            // if correction factor si greater than zero, lighten color.
             else
             {
                 red = (255 - red) * correctionFactor + red;

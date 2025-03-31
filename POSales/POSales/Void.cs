@@ -106,5 +106,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void Void_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

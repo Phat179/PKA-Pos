@@ -86,5 +86,10 @@ namespace POSales
             if(e.KeyCode==Keys.Escape)
             { this.Dispose(); }
         }
+
+        private void Store_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

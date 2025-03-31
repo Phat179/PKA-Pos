@@ -232,6 +232,7 @@ namespace POSales
             this.cboCategory.Name = "cboCategory";
             this.cboCategory.Size = new System.Drawing.Size(531, 28);
             this.cboCategory.TabIndex = 14;
+            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
             // 
             // txtPrice
             // 

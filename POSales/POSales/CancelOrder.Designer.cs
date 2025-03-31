@@ -3,14 +3,10 @@ namespace POSales
 {
     partial class CancelOrder
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
+
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -401,6 +397,7 @@ namespace POSales
             this.Name = "CancelOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CancelOrder";
+            this.Load += new System.EventHandler(this.CancelOrder_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CancelOrder_KeyDown);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

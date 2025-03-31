@@ -55,5 +55,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void txtResPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

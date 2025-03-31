@@ -3,14 +3,10 @@ namespace POSales
 {
     partial class ChangePassword
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
+
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -255,6 +251,7 @@ namespace POSales
             this.Name = "ChangePassword";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ChangePassword";
+            this.Load += new System.EventHandler(this.ChangePassword_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ChangePassword_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

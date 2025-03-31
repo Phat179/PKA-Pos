@@ -3,14 +3,10 @@ namespace POSales
 {
     partial class Alert
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
+
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -76,6 +72,7 @@ namespace POSales
             this.lblMsg.TabIndex = 6;
             this.lblMsg.Text = "Message Text";
             this.lblMsg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMsg.Click += new System.EventHandler(this.lblMsg_Click);
             // 
             // btnClose
             // 

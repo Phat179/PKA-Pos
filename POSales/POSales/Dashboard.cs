@@ -31,5 +31,9 @@ namespace POSales
             lblCriticalItems.Text = dbcon.ExtractData("SELECT COUNT(*) FROM vwCriticalItems").ToString("#,##0"); 
         }
 
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

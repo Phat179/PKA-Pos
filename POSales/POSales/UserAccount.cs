@@ -180,5 +180,10 @@ namespace POSales
             properties.username = username;
             properties.ShowDialog();
         }
+
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

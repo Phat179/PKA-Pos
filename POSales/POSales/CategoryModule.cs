@@ -62,7 +62,7 @@ namespace POSales
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //Update brand name
+            //cập nhật tên brand
             if (MessageBox.Show("Are you sure you want to update this category?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
@@ -72,7 +72,7 @@ namespace POSales
                 cn.Close();
                 MessageBox.Show("Category has been successfully updated.", "Point Of Sales");
                 Clear();
-                this.Dispose();// To close this form after update data
+                this.Dispose();
             }
         }
 
@@ -87,6 +87,11 @@ namespace POSales
             {
                 this.Dispose();
             }
+        }
+
+        private void txtCategory_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

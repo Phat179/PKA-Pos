@@ -175,6 +175,7 @@ namespace POSales
             this.Name = "Void";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Void";
+            this.Load += new System.EventHandler(this.Void_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Void_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

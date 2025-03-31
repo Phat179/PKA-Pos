@@ -31,7 +31,7 @@ namespace POSales
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // To insert brand name to brand table 
+            // thêm ttin brand 
             try
             {
                 if (MessageBox.Show("Are you sure you want to save this brand?", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -70,7 +70,7 @@ namespace POSales
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            //Update brand name
+            //cập nhật tên brand
             if (MessageBox.Show("Are you sure you want to update this brand?", "Update Record!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
@@ -80,8 +80,13 @@ namespace POSales
                 cn.Close();
                 MessageBox.Show("Brand has been successfully updated.", "POS");
                 Clear();
-                this.Dispose();// To close this form after update data
+                this.Dispose();// đóng form sau khi cập nhật
             }
+        }
+
+        private void txtBrand_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

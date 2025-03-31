@@ -269,6 +269,7 @@ namespace POSales
             this.Name = "Settle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settle Payment";
+            this.Load += new System.EventHandler(this.Settle_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Settle_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

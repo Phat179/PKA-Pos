@@ -23,7 +23,7 @@ namespace POSales
             cn = new SqlConnection(dbcon.myConnection());
             LoadCategory();
         }
-        //Data retrieve from tbCategory to dgvCategory on Category form
+        //xuất dl từ tbCategory sang dgvCategory trong Category form
         public void LoadCategory()
         {
             int i = 0;

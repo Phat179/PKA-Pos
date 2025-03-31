@@ -112,5 +112,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void SupplierModule_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

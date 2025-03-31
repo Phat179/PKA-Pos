@@ -25,7 +25,7 @@ namespace POSales
             LoadBrand();
         }
 
-        //Data retrieve from tbBrand to dgvBrand on Brand form
+        //Xuất dl từ tbBrand sang dgvBrand trong Brand form
         public void LoadBrand()
         {
             int i = 0;
@@ -50,7 +50,7 @@ namespace POSales
 
         private void dgvBrand_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //For update and delete brand by cell click from tbBrand
+            //cập nhật tbBrand
             string colName = dgvBrand.Columns[e.ColumnIndex].Name;
             if (colName == "Delete")
             {

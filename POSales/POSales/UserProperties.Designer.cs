@@ -144,6 +144,7 @@ namespace POSales
             this.Name = "UserProperties";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Properties";
+            this.Load += new System.EventHandler(this.UserProperties_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserProperties_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

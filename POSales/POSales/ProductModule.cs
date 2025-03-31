@@ -135,5 +135,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void cboCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

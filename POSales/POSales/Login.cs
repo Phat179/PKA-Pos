@@ -122,5 +122,10 @@ namespace POSales
                 btnLogin.PerformClick();
             }
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

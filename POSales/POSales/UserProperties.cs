@@ -64,5 +64,10 @@ namespace POSales
                 this.Dispose();
             }
         }
+
+        private void UserProperties_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

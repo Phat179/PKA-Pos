@@ -3,14 +3,10 @@ namespace POSales
 {
     partial class BrandModule
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
+
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -82,6 +78,7 @@ namespace POSales
             this.txtBrand.Name = "txtBrand";
             this.txtBrand.Size = new System.Drawing.Size(531, 26);
             this.txtBrand.TabIndex = 1;
+            this.txtBrand.TextChanged += new System.EventHandler(this.txtBrand_TextChanged);
             // 
             // btnSave
             // 

@@ -178,7 +178,7 @@ namespace POSales
             Noti();
         }
 
-        // Noti Alart for critical items
+        // noti cho sản phẩm  critical
         public void Noti()
         {
             int i = 0;
@@ -195,6 +195,11 @@ namespace POSales
             }
             dr.Close();
             cn.Close();
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

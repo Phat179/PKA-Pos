@@ -114,12 +114,17 @@ namespace POSales
             stockIn.addStockIn(lblPcode.Text);
         }
 
+        private void lblMsg_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
             while(tempIndex==index)
             {
-                //if the color has already been selected, we select again to choose a different one.
+                //đổi màu.
                 index = random.Next(ThemeColor.ColorList.Count);
             }
             tempIndex = index;

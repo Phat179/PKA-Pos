@@ -62,6 +62,7 @@ namespace POSales
             this.txtResPass.Size = new System.Drawing.Size(233, 23);
             this.txtResPass.TabIndex = 1;
             this.txtResPass.UseSystemPasswordChar = true;
+            this.txtResPass.TextChanged += new System.EventHandler(this.txtResPass_TextChanged);
             // 
             // txtNpass
             // 

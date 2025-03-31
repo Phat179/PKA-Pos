@@ -1067,6 +1067,7 @@ namespace POSales
             this.dgvStockIn.RowHeadersVisible = false;
             this.dgvStockIn.Size = new System.Drawing.Size(976, 394);
             this.dgvStockIn.TabIndex = 10;
+            this.dgvStockIn.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStockIn_CellContentClick);
             // 
             // dataGridViewTextBoxColumn27
             // 

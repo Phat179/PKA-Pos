@@ -148,6 +148,7 @@ namespace POSales
             this.Name = "Store";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STORE";
+            this.Load += new System.EventHandler(this.Store_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Store_KeyDown);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

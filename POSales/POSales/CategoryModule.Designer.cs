@@ -3,14 +3,10 @@ namespace POSales
 {
     partial class CategoryModule
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
+
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
+
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
@@ -146,6 +142,7 @@ namespace POSales
             this.txtCategory.Name = "txtCategory";
             this.txtCategory.Size = new System.Drawing.Size(531, 26);
             this.txtCategory.TabIndex = 8;
+            this.txtCategory.TextChanged += new System.EventHandler(this.txtCategory_TextChanged);
             // 
             // CategoryModule
             // 

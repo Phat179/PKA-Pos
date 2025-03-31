@@ -83,7 +83,7 @@ namespace POSales
         {
             try
             {
-                //validation for empty field
+                //Check trường thông tin trống
                 if(cbAction.Text=="")
                 {
                     MessageBox.Show("Please select action for add or reduce.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -105,7 +105,7 @@ namespace POSales
                     return;
                 }
 
-                //update stock
+                //Cập nhập stock sản phẩm
                 if(int.Parse(txtQty.Text)>_qty)
                 {
                     MessageBox.Show("Stock on hand quantity should be greater than adjustment quantity.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);

@@ -106,13 +106,13 @@ namespace POSales
                     {
                         for(int i=0; i<dgvStockIn.Rows.Count;i++)
                         {
-                            //update product quantity
+                            //cập nhật số lượng
                             cn.Open();
                             cm = new SqlCommand("UPDATE tbProduct SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + " WHERE pcode LIKE '" + dgvStockIn.Rows[i].Cells[3].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
                             cn.Close();
 
-                            //update stockin quantity
+                            //cập nhật số lượng sản phẩm stock in
                             cn.Open();
                             cm = new SqlCommand("UPDATE tbStockIn SET qty = qty + " + int.Parse(dgvStockIn.Rows[i].Cells[5].Value.ToString()) + ", status='Done' WHERE id LIKE '" + dgvStockIn.Rows[i].Cells[1].Value.ToString() + "'", cn);
                             cm.ExecuteNonQuery();
